@@ -7,7 +7,7 @@ generate_functions_list.py - generate list of Famos function for vim syntax
 """
 import argparse
 import re
-import PyPDF2
+import pypdf
 
 
 def isfamosfunction(string):
@@ -18,13 +18,31 @@ def isfamosfunction(string):
     return re.fullmatch(r'\w+[\w_?-]+', string) is not None
 
 
-def extract_toc(fname):
+def extract_functions(fname):
     """
     extract the functions of the table of content from Famos function reference
     """
-    reader = PyPDF2.PdfReader(open(fname, 'rb'))
-    return [o['/Title'] for o in reader.outline[1:-1]
+    reader = pypdf.PdfReader(open(fname, 'rb'))
+    famosfunc = [o['/Title'] for o in reader.outline[1:-1]
             if isfamosfunction(o['/Title'])]
+    """
+    older famos functions in CAPITAL can be shorten
+    German function name can be shorten to 4 characters
+    English function name can be shorten to 3 characters
+    """
+    short_famosfunc = []
+    if 'ENTFERNEN' in famosfunc:
+        for func in famosfunc:
+            if func.isupper():
+                short_famosfunc.append(func[:4])
+    else:
+        for func in famosfunc:
+            if func.isupper():
+                short_famosfunc.append(func[:3])
+    famosfunc.extend(short_famosfunc)
+    famosfunc = list(set(famosfunc))
+    famosfunc.sort()
+    return famosfunc
 
 
 def print_syntax(ref_fname, group):
@@ -32,7 +50,7 @@ def print_syntax(ref_fname, group):
     extract the function list and write the result to a vim syntax file
     with the prefix syn keyword ...
     """
-    functions = extract_toc(ref_fname)
+    functions = extract_functions(ref_fname)
     numfun = len(functions)
     for i in range(0, numfun, 5):
         start = i
