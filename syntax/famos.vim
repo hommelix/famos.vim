@@ -21,380 +21,428 @@ syn keyword famosRepeat	for to break foreach in
 syn keyword famosStatement end
 " German builtin functions generated with
 " :r!python3 generate_functions_list.py imc_FAMOS_Funktions_Referenz.pdf famosFunctionDe
-syn keyword famosFunctionDe ABCBewertung ABFR ABFRAGEN ABLA ABLAGE
-syn keyword famosFunctionDe AKF AND ANWE ANWEISEN APPL
-syn keyword famosFunctionDe APPLIKATION ASCI ASCII ASCO ASCOPTION
-syn keyword famosFunctionDe ASCS ASCSICHERN Abs Add Alle0
-syn keyword famosFunctionDe AmpSpectrumPeak AmpSpectrumPeak_1 AmpSpectrumPeak_exp AmpSpectrumRMS AmpSpectrumRMS_1
-syn keyword famosFunctionDe AmpSpectrumRMS_exp AnzeigeY? Append AppendLoop AppendLoopEnd
-syn keyword famosFunctionDe Appro ApproNonLin BENE BENENNEN BINÄ
-syn keyword famosFunctionDe BINÄR BREA BREAK Band Binde
-syn keyword famosFunctionDe BitAnd BitGet BitNot BitOr BitSet
-syn keyword famosFunctionDe BitShift BoxAusgabe BoxNachricht BoxText? BoxWert?
-syn keyword famosFunctionDe CASE CFCFilter CONT CONTINUE ClsOff2ChannelHistogram
-syn keyword famosFunctionDe ClsOffFromRainflowGetLevelCrossing ClsOffFromRainflowGetMinMaxPeak ClsOffFromRainflowGetPeak ClsOffFromRainflowGetRangePair ClsOffFromRainflowGetReconstruction
-syn keyword famosFunctionDe ClsOffFromRainflowGetSpans ClsOffFromRainflowGetZeroCrossingPeak ClsOffMarkov ClsOffMatrixSum1Triangle ClsOffMatrixSumLines
-syn keyword famosFunctionDe ClsOffRainflowAddResidue ClsOffRainflowClearMatrix ClsOffRainflowClearResidue ClsOffRainflowFeedDiscontinuity ClsOffRainflowFeedMatrix
-syn keyword famosFunctionDe ClsOffRainflowFeedResidue ClsOffRainflowFeedSamples ClsOffRainflowGetMatrix ClsOffRainflowGetResidue ClsOffRainflowGetResidueMtx
-syn keyword famosFunctionDe ClsOffRainflowInit1 ClsOffRainflowInit2 ClsOffRainflowInit3 ClsOffRainflowSetMatrix ClsOffRevolutionsHistogram
-syn keyword famosFunctionDe ClsOffRevolutionsMatrix ClsOffRevolutionsMatrix2 ClsOffTM ClsOffWoehlerSN ClsQuantile
-syn keyword famosFunctionDe ClsTimeAtLevel CodeRange Coherence ComplexSpectrum ComplexSpectrum_1
-syn keyword famosFunctionDe ComplexSpectrum_exp ConvertUnit CorrCoeff CrossPowerDS CrossPowerDS_1
-syn keyword famosFunctionDe CrossPowerDS_exp CrossPowerNorm CrossPowerNorm_1 CutDt CwAction
-syn keyword famosFunctionDe CwActionP CwAxisGet CwAxisGetText CwAxisSet CwColorGet
-syn keyword famosFunctionDe CwColorSet CwCosysGet CwCosysSet CwDataGet CwDataGetText
-syn keyword famosFunctionDe CwDataSet CwDeleteElement CwDisplayGet CwDisplayGetText CwDisplaySet
-syn keyword famosFunctionDe CwGlobalGet CwGlobalGetText CwGlobalSet CwIsWindow CwLineGet
-syn keyword famosFunctionDe CwLineSet CwLoadCCV CwLoadSettings CwMarkerGet CwMarkerGetText
-syn keyword famosFunctionDe CwMarkerSet CwNewChannel CwNewChannel_xy CwNewChannel_xyz CwNewElement
-syn keyword famosFunctionDe CwNewWindow CwPosition CwReplace CwSaveCCV CwSelectByChannel
-syn keyword famosFunctionDe CwSelectByIndex CwSelectMode CwSelectWindow DDEFrage DDESende
-syn keyword famosFunctionDe DDESetze DDETrenn DEFA DEFAULT DFTSpectrum
-syn keyword famosFunctionDe DFilt DSPL DSPLADEN DatFormat? DateiName?
-syn keyword famosFunctionDe DbClosePanel DbLoadPanel DbSetActivePanel DbSetPanelWindow DbShow
-syn keyword famosFunctionDe Dialog Diff Div DlgApplyData DlgCloseDialog
-syn keyword famosFunctionDe DlgDateiName DlgDeleteItem DlgEnable DlgExpandTree DlgFindItem
-syn keyword famosFunctionDe DlgGetBarMax DlgGetBarMin DlgGetCellText DlgGetCellValue DlgGetItemCount
-syn keyword famosFunctionDe DlgGetItemLevel DlgGetItemText DlgGetPath DlgGetSelectedItem DlgGetSelectedItemCount
-syn keyword famosFunctionDe DlgGetText DlgGetValue DlgInsertItem DlgInsertTreeItem DlgIsItemSelected
-syn keyword famosFunctionDe DlgSelectItem DlgSetBackColor DlgSetBarRange DlgSetCellBackColor DlgSetCellText
-syn keyword famosFunctionDe DlgSetCellTextColor DlgSetCellValue DlgSetItemSelection DlgSetItemText DlgSetText
-syn keyword famosFunctionDe DlgSetTextColor DlgSetValue DlgShow DrDrucke DrFenst
-syn keyword famosFunctionDe DrKonfig DrMove DrRdClip DrSetzen DrSicher
-syn keyword famosFunctionDe DrTitleI DrTitleN ELSE ELSEIF END
-syn keyword famosFunctionDe ENTF ENTFERNEN EXIT EXITSEQUENZ Eff
-syn keyword famosFunctionDe Einheit? Envelope1 Envelope2 Equal EventAppend
-syn keyword famosFunctionDe EventDel EventGet EventJoin EventNew EventNum?
-syn keyword famosFunctionDe EventProp EventProp? EventSet Execute ExpoRMS
-syn keyword famosFunctionDe FAMO FAMOS FASL FASLADEN FFT
-syn keyword famosFunctionDe FFTO FFTOPTION FOR FORE FOREACH
-syn keyword famosFunctionDe FORM FORMULAR Farbe? FileClose FileComm?
-syn keyword famosFunctionDe FileErrCode? FileErrText? FileLineRead FileLineWrite FileLoad
-syn keyword famosFunctionDe FileObjDel FileObjFind FileObjName? FileObjNum? FileObjRead
-syn keyword famosFunctionDe FileObjType? FileObjWrite FileOpenASCII FileOpenASCII2 FileOpenDSF
-syn keyword famosFunctionDe FileOpenFAS FileOpenXLS FileOpenXLS2 FileResetAll FileSave
-syn keyword famosFunctionDe FileSetComm FileXLSCellRead FileXLSCellWrite FileXLSColumnRead FileXLSSelectSheet
-syn keyword famosFunctionDe FiltBP FiltBS FiltBpZ FiltBsZ FiltHP
-syn keyword famosFunctionDe FiltHpZ FiltLpZ FiltTP FilterAnalog Flag?
-syn keyword famosFunctionDe Flipflop FrequencyResponse FsCopyFile FsCreateDirectory FsDeleteFile
-syn keyword famosFunctionDe FsDlgSelectDirectory FsDlgSelectFiles FsFileExists FsFileListClose FsFileListGetAttribute
-syn keyword famosFunctionDe FsFileListGetCount FsFileListGetName FsFileListGetSize FsFileListGetTime FsFileListNew
-syn keyword famosFunctionDe FsGetDiskFreeSpace FsGetDriveType FsGetFileAttributes FsGetFileNames FsGetFileSize
-syn keyword famosFunctionDe FsGetFileTime FsGetLastError FsGetLastErrorNumber FsGetLogicalDrives FsGetLongPathName
-syn keyword famosFunctionDe FsGetParentDirectoryName FsGetShortPathName FsMakePath FsMoveFile FsPathCombine
-syn keyword famosFunctionDe FsRemoveDirectory FsRenameFile FsSetFileAttributes FsSetFileTime FsSplitPath
-syn keyword famosFunctionDe FsTempFileName GInt Ganz GetLastError GetOption
+syn keyword famosFunctionDe ABCBewertung ABFRAGEN ABFR ABLAGE ABLA
+syn keyword famosFunctionDe AND AND ANWEISEN ANWE APPLIKATION APPL
+syn keyword famosFunctionDe ASCOPTION ASCO ASCSICHERN ASCS Abs Add Alle0
+syn keyword famosFunctionDe AmpSpectrumPeak_1 AmpSpectrumPeak_exp
+syn keyword famosFunctionDe AmpSpectrumRMS_1 AmpSpectrumRMS_exp
+syn keyword famosFunctionDe Append AppendLoop AppendLoopEnd Appro
+syn keyword famosFunctionDe BENENNEN BENE BINÄR BINÄ BREAK BREA Band
+syn keyword famosFunctionDe BitAnd BitGet BitNot BitOr BitSet BitShift
+syn keyword famosFunctionDe BoxNachricht BoxText? BoxWert? CASE CASE
+syn keyword famosFunctionDe CONTINUE CONT ClsOff2ChannelHistogram
+syn keyword famosFunctionDe ClsOffFromRainflowGetMinMaxPeak
+syn keyword famosFunctionDe ClsOffFromRainflowGetRangePair
+syn keyword famosFunctionDe ClsOffFromRainflowGetSpans
+syn keyword famosFunctionDe ClsOffMarkov ClsOffMatrixSum1Triangle
+syn keyword famosFunctionDe ClsOffRainflowAddResidue
+syn keyword famosFunctionDe ClsOffRainflowClearResidue
+syn keyword famosFunctionDe ClsOffRainflowFeedMatrix
+syn keyword famosFunctionDe ClsOffRainflowFeedSamples
+syn keyword famosFunctionDe ClsOffRainflowGetResidue
+syn keyword famosFunctionDe ClsOffRainflowInit1 ClsOffRainflowInit2
+syn keyword famosFunctionDe ClsOffRainflowSetMatrix
+syn keyword famosFunctionDe ClsOffRevolutionsMatrix
+syn keyword famosFunctionDe ClsOffTM ClsOffWoehlerSN ClsQuantile
+syn keyword famosFunctionDe CodeRange Coherence ComplexSpectrum
+syn keyword famosFunctionDe ComplexSpectrum_exp ConvertUnit CorrCoeff
+syn keyword famosFunctionDe CrossPowerDS_1 CrossPowerDS_exp
+syn keyword famosFunctionDe CrossPowerNorm_1 CutDt CwAction CwActionP
+syn keyword famosFunctionDe CwAxisGetText CwAxisSet CwColorGet
+syn keyword famosFunctionDe CwCosysGet CwCosysSet CwDataGet
+syn keyword famosFunctionDe CwDataSet CwDeleteElement CwDisplayGet
+syn keyword famosFunctionDe CwDisplaySet CwGlobalGet CwGlobalGetText
+syn keyword famosFunctionDe CwIsWindow CwLineGet CwLineSet CwLoadCCV
+syn keyword famosFunctionDe CwMarkerGet CwMarkerGetText CwMarkerSet
+syn keyword famosFunctionDe CwNewChannel_xy CwNewChannel_xyz
+syn keyword famosFunctionDe CwNewWindow CwPosition CwReplace CwSaveCCV
+syn keyword famosFunctionDe CwSelectByIndex CwSelectMode CwSelectWindow
+syn keyword famosFunctionDe DDESende DDESetze DDETrenn DEFAULT DEFA
+syn keyword famosFunctionDe DFilt DSPLADEN DSPL DatFormat? DateiName?
+syn keyword famosFunctionDe DbLoadPanel DbSetActivePanel
+syn keyword famosFunctionDe DbShow Dialog Diff Div DlgApplyData
+syn keyword famosFunctionDe DlgDateiName DlgDeleteItem DlgEnable
+syn keyword famosFunctionDe DlgFindItem DlgGetBarMax DlgGetBarMin
+syn keyword famosFunctionDe DlgGetCellValue DlgGetItemCount
+syn keyword famosFunctionDe DlgGetItemText DlgGetPath DlgGetSelectedItem
+syn keyword famosFunctionDe DlgGetText DlgGetValue DlgInsertItem
+syn keyword famosFunctionDe DlgIsItemSelected DlgSelectItem
+syn keyword famosFunctionDe DlgSetBarRange DlgSetCellBackColor
+syn keyword famosFunctionDe DlgSetCellTextColor DlgSetCellValue
+syn keyword famosFunctionDe DlgSetItemText DlgSetText DlgSetTextColor
+syn keyword famosFunctionDe DlgShow DrDrucke DrFenst DrKonfig DrMove
+syn keyword famosFunctionDe DrSetzen DrSicher DrTitleI DrTitleN
+syn keyword famosFunctionDe ELSEIF ELSE END END ENTFERNEN ENTF
+syn keyword famosFunctionDe Eff Einheit? Envelope1 Envelope2 Equal
+syn keyword famosFunctionDe EventDel EventGet EventJoin EventNew
+syn keyword famosFunctionDe EventProp EventProp? EventSet Execute
+syn keyword famosFunctionDe FAMOS FAMO FASLADEN FASL FFT FFT
+syn keyword famosFunctionDe FOR FOR FOREACH FORE FORMULAR FORM Farbe?
+syn keyword famosFunctionDe FileComm? FileErrCode? FileErrText?
+syn keyword famosFunctionDe FileLineWrite FileLoad FileObjDel
+syn keyword famosFunctionDe FileObjName? FileObjNum? FileObjRead
+syn keyword famosFunctionDe FileObjWrite FileOpenASCII FileOpenASCII2
+syn keyword famosFunctionDe FileOpenFAS FileOpenXLS FileOpenXLS2
+syn keyword famosFunctionDe FileSave FileSetComm FileXLSCellRead
+syn keyword famosFunctionDe FileXLSColumnRead FileXLSSelectSheet FiltBP
+syn keyword famosFunctionDe FiltBpZ FiltBsZ FiltHP FiltHpZ FiltLpZ
+syn keyword famosFunctionDe FilterAnalog Flag? Flipflop
+syn keyword famosFunctionDe FsCopyFile FsCreateDirectory FsDeleteFile
+syn keyword famosFunctionDe FsDlgSelectFiles FsFileExists
+syn keyword famosFunctionDe FsFileListGetAttribute FsFileListGetCount
+syn keyword famosFunctionDe FsFileListGetSize FsFileListGetTime
+syn keyword famosFunctionDe FsGetDiskFreeSpace FsGetDriveType
+syn keyword famosFunctionDe FsGetFileNames FsGetFileSize FsGetFileTime
+syn keyword famosFunctionDe FsGetLastErrorNumber FsGetLogicalDrives
+syn keyword famosFunctionDe FsGetParentDirectoryName FsGetShortPathName
+syn keyword famosFunctionDe FsMoveFile FsPathCombine FsRemoveDirectory
+syn keyword famosFunctionDe FsSetFileAttributes FsSetFileTime
+syn keyword famosFunctionDe FsTempFileName GInt Ganz GetLastError
 syn keyword famosFunctionDe GetScale GetSystemInfo Gla3 Gla5 Glatt
-syn keyword famosFunctionDe GrBinde GrExpand GrKanalAdd GrKanalEntf GrKanalFinde
-syn keyword famosFunctionDe GrKanalName? GrKanalZahl? GrNeu Gren GrenIndex
-syn keyword famosFunctionDe Histo HttpGetFile HttpGetText HttpOption Hyst
-syn keyword famosFunctionDe IF IPli IPol InGrad InRad
-syn keyword famosFunctionDe Int IntEx IntervalFrom2Levels IntervalFromLevel IntervalGetStatist
-syn keyword famosFunctionDe IsCplx IsXY KBT KKF KOMM
-syn keyword famosFunctionDe KOMMENTAR KURV KURVELADEN Kart Kenn
-syn keyword famosFunctionDe KlsDurch KlsMaxSp KlsRFlow KlsSMitt KlsSPaar
-syn keyword famosFunctionDe KlsSpSti KlsSpann KlsSpit1 KlsSpit2 KlsSpit3
-syn keyword famosFunctionDe KlsStSti KlsStich KlsVWeil Kmp1 Kmp2
-syn keyword famosFunctionDe KmpX KmpY Komm? Kompl KvAttrib
-syn keyword famosFunctionDe KvCursor KvCursorSetzen KvFenst KvGlobaleEinstellungLaden KvKanalErsetzen
-syn keyword famosFunctionDe KvKonfig KvMarkerAnhängen KvPosi KvRefDB KvSicher
-syn keyword famosFunctionDe KvTitel KvTitelAbfrage KvUpdate KvVar KvXAchse
-syn keyword famosFunctionDe KvYAchse LADE LADEN LDIR LEER
-syn keyword famosFunctionDe LOCA LOCAL Lang Lang? LogSetup
-syn keyword famosFunctionDe LogTrace LoudnessLevel LoudnessSpectrum LowerValue MDIR
-syn keyword famosFunctionDe MatrixAdd MatrixChangeDim MatrixCut MatrixEigen MatrixFromLine
-syn keyword famosFunctionDe MatrixGet MatrixInfo MatrixInit MatrixInverse MatrixIpol
-syn keyword famosFunctionDe MatrixMerge MatrixMult MatrixPart MatrixSet MatrixSumLines
-syn keyword famosFunctionDe MatrixTranspose Max MeasChanNames? MeasNames? MeasurementName?
-syn keyword famosFunctionDe Median Min Mitte Mod Monoflop
-syn keyword famosFunctionDe Mult MvMax MvMean MvMin MvRMS
-syn keyword famosFunctionDe MvStDev MvSum NOT NorthCorrection OR
-syn keyword famosFunctionDe Oben OdsGetLastErrorCode OdsGetLastErrorTxt OdsIEAddAttribute OdsIEAddAttributeTxt
-syn keyword famosFunctionDe OdsIEBuildVarName OdsIECreateElement OdsIEDeleteElement OdsIEGetAttribute OdsIEGetAttributeTxt
-syn keyword famosFunctionDe OdsIEGetAttributes OdsIEGetChannel OdsIEGetMeasurement OdsIEGetPropertyTxt OdsIEImportData
-syn keyword famosFunctionDe OdsIEListByAsamPath OdsIEListByType OdsIEListChildren OdsIERemoveAttribute OdsIESetAttribute
-syn keyword famosFunctionDe OdsIESetAttributeTxt OdsInitialize OdsPluginListSelItems OdsPluginSessionConnect OdsSessionClose
-syn keyword famosFunctionDe OdsSessionCreate OdsSessionSelect OnError OtrEncoderRevs01 OtrFrequLine
-syn keyword famosFunctionDe OtrOrderSpecFromFFT OtrOrderSpectrum OtrResample OtrResampleAAF OtrRpmOrder
-syn keyword famosFunctionDe OtrRpmPresentFast OtrRpmPresentVector OtrRpmPresentation OtrRpmSpectrum OtrRpmSpectrumFast
-syn keyword famosFunctionDe OtrRpmThirds OtrTachoMode OtrTachoToDist OtrTachoToSpeed OtrTachoToSpeedX
-syn keyword famosFunctionDe OtrTimeOrderSpectrum OtrTrackingBandPass OtrTrackingBandPassZ OtrTrackingBandStop OtrTrackingBandStopZ
-syn keyword famosFunctionDe OtrTrackingExpoRms OtrTrackingHighPass OtrTrackingHighPassZ OtrTrackingLowPass OtrTrackingLowPassZ
-syn keyword famosFunctionDe PAUS PAUSE PI PI2 PTast
-syn keyword famosFunctionDe PTast0 PTastEx Perio PhaseContinuous PhaseMod
-syn keyword famosFunctionDe PnDeleteItem PnEnable PnExportGraphics PnExportPDF PnFindItem
-syn keyword famosFunctionDe PnGetActivePage PnGetFileSelection PnGetFolder PnGetItemCount PnGetItemText
-syn keyword famosFunctionDe PnGetPageCount PnGetSelectedItem PnGetSelectedItemCount PnGetText PnGetValue
-syn keyword famosFunctionDe PnInsertItem PnInsertPage PnIsItemSelected PnPrint PnRemovePage
-syn keyword famosFunctionDe PnSave PnSelectItem PnSetActivePage PnSetFileSelection PnSetFolder
-syn keyword famosFunctionDe PnSetItemSelection PnSetItemText PnSetProperty PnSetText PnSetTimer
-syn keyword famosFunctionDe PnSetValue PnShow PnShowPage PnTableColumns? PnTableGetCellText
-syn keyword famosFunctionDe PnTableGetCellValue PnTableGetSelectedRows PnTableRows? PnTableSetCell PnTableSetColumn
-syn keyword famosFunctionDe PnTableSetProperty PnTableSetRow PnTableShowColumn Pol Poly
-syn keyword famosFunctionDe PolynomRoots Posi PosiEx PosiEx2 Power1
-syn keyword famosFunctionDe Power2 Power3 PowerCepstrum PowerCepstrum_1 PowerCepstrum_exp
-syn keyword famosFunctionDe PowerDS PowerDS_1 PowerDS_exp PowerParameter PowerSelect
-syn keyword famosFunctionDe PowerSpectrum PowerSpectrum_1 PowerSpectrum_exp PptAddSlides PptClosePresentation
-syn keyword famosFunctionDe PptDeleteSlide PptDuplicateSlide PptFindSlideByAlternativeText PptGetSlidesCount PptMoveSlide
-syn keyword famosFunctionDe PptOpenPresentation PptPrintPresentation PptSavePresentation PptSetCellText PptSetCurve
-syn keyword famosFunctionDe PptSetPicture PptSetText Pulse PulseDuration Quad
-syn keyword famosFunctionDe RGB RGBConvert R_ChisqTest R_Execute R_GetOption
+syn keyword famosFunctionDe GrExpand GrKanalAdd GrKanalEntf GrKanalFinde
+syn keyword famosFunctionDe GrKanalZahl? GrNeu Gren GrenIndex Histo
+syn keyword famosFunctionDe HttpGetText HttpOption Hyst IF IF IPli IPol
+syn keyword famosFunctionDe InRad Int IntEx IntervalFrom2Levels
+syn keyword famosFunctionDe IntervalGetStatist IsCplx IsXY KBT KBT
+syn keyword famosFunctionDe KOMMENTAR KOMM KURVELADEN KURV Kart Kenn
+syn keyword famosFunctionDe KlsMaxSp KlsRFlow KlsSMitt KlsSPaar KlsSpSti
+syn keyword famosFunctionDe KlsSpit1 KlsSpit2 KlsSpit3 KlsStSti KlsStich
+syn keyword famosFunctionDe Kmp1 Kmp2 KmpX KmpY Komm? Kompl KvAttrib
+syn keyword famosFunctionDe KvCursorSetzen KvFenst
+syn keyword famosFunctionDe KvKanalErsetzen KvKonfig KvMarkerAnhängen
+syn keyword famosFunctionDe KvRefDB KvSicher KvTitel KvTitelAbfrage
+syn keyword famosFunctionDe KvVar KvXAchse KvYAchse LADEN LADE LDIR LDIR
+syn keyword famosFunctionDe LOCAL LOCA Lang Lang? LogSetup LogTrace
+syn keyword famosFunctionDe LoudnessSpectrum LowerValue MDIR MDIR
+syn keyword famosFunctionDe MatrixChangeDim MatrixCut MatrixEigen
+syn keyword famosFunctionDe MatrixGet MatrixInfo MatrixInit
+syn keyword famosFunctionDe MatrixIpol MatrixMerge MatrixMult MatrixPart
+syn keyword famosFunctionDe MatrixSumLines MatrixTranspose Max
+syn keyword famosFunctionDe MeasNames? MeasurementName? Median Min Mitte
+syn keyword famosFunctionDe Monoflop Mult MvMax MvMean MvMin MvRMS
+syn keyword famosFunctionDe MvSum NOT NOT NorthCorrection OR OR Oben
+syn keyword famosFunctionDe OdsGetLastErrorTxt OdsIEAddAttribute
+syn keyword famosFunctionDe OdsIEBuildVarName OdsIECreateElement
+syn keyword famosFunctionDe OdsIEGetAttribute OdsIEGetAttributeTxt
+syn keyword famosFunctionDe OdsIEGetChannel OdsIEGetMeasurement
+syn keyword famosFunctionDe OdsIEImportData OdsIEListByAsamPath
+syn keyword famosFunctionDe OdsIEListChildren OdsIERemoveAttribute
+syn keyword famosFunctionDe OdsIESetAttributeTxt OdsInitialize
+syn keyword famosFunctionDe OdsPluginSessionConnect OdsSessionClose
+syn keyword famosFunctionDe OdsSessionSelect OnError OtrEncoderRevs01
+syn keyword famosFunctionDe OtrOrderSpecFromFFT OtrOrderSpectrum
+syn keyword famosFunctionDe OtrResampleAAF OtrRpmOrder OtrRpmPresentFast
+syn keyword famosFunctionDe OtrRpmPresentation OtrRpmSpectrum
+syn keyword famosFunctionDe OtrRpmThirds OtrTachoMode OtrTachoToDist
+syn keyword famosFunctionDe OtrTachoToSpeedX OtrTimeOrderSpectrum
+syn keyword famosFunctionDe OtrTrackingBandPassZ OtrTrackingBandStop
+syn keyword famosFunctionDe OtrTrackingExpoRms OtrTrackingHighPass
+syn keyword famosFunctionDe OtrTrackingLowPass OtrTrackingLowPassZ
+syn keyword famosFunctionDe PI PI PI2 PI2 PTast PTast0 PTastEx Perio
+syn keyword famosFunctionDe PhaseMod PnDeleteItem PnEnable
+syn keyword famosFunctionDe PnExportPDF PnFindItem PnGetActivePage
+syn keyword famosFunctionDe PnGetFolder PnGetItemCount PnGetItemText
+syn keyword famosFunctionDe PnGetSelectedItem PnGetSelectedItemCount
+syn keyword famosFunctionDe PnGetValue PnInsertItem PnInsertPage
+syn keyword famosFunctionDe PnPrint PnRemovePage PnSave PnSelectItem
+syn keyword famosFunctionDe PnSetFileSelection PnSetFolder
+syn keyword famosFunctionDe PnSetItemText PnSetProperty PnSetText
+syn keyword famosFunctionDe PnSetValue PnShow PnShowPage PnTableColumns?
+syn keyword famosFunctionDe PnTableGetCellValue PnTableGetSelectedRows
+syn keyword famosFunctionDe PnTableSetCell PnTableSetColumn
+syn keyword famosFunctionDe PnTableSetRow PnTableShowColumn Pol Poly
+syn keyword famosFunctionDe Posi PosiEx PosiEx2 Power1 Power2 Power3
+syn keyword famosFunctionDe PowerCepstrum_1 PowerCepstrum_exp PowerDS
+syn keyword famosFunctionDe PowerDS_exp PowerParameter PowerSelect
+syn keyword famosFunctionDe PowerSpectrum_1 PowerSpectrum_exp
+syn keyword famosFunctionDe PptClosePresentation PptDeleteSlide
+syn keyword famosFunctionDe PptFindSlideByAlternativeText
+syn keyword famosFunctionDe PptMoveSlide PptOpenPresentation
+syn keyword famosFunctionDe PptSavePresentation PptSetCellText
+syn keyword famosFunctionDe PptSetPicture PptSetText Pulse PulseDuration
+syn keyword famosFunctionDe RGB RGB RGBConvert R_ChisqTest R_Execute
 syn keyword famosFunctionDe R_GetVar R_Norm R_SetVar R_tTest Rampe
-syn keyword famosFunctionDe Random RangeSet RedEx Regr RemoveSamples
-syn keyword famosFunctionDe RenameMeasurement Rez RgCurveSet RgDocClose RgDocCopy
-syn keyword famosFunctionDe RgDocExport RgDocExportEx RgDocGetPageCount RgDocInsertPage RgDocNew
-syn keyword famosFunctionDe RgDocOpen RgDocPrint RgDocPrintSetup RgDocRemovePage RgDocSave
-syn keyword famosFunctionDe RgDocSetActive RgDocSetActivePage RgGetErrorText RgObjDelete RgObjFind
-syn keyword famosFunctionDe RgObjGetCount RgObjGetPos RgObjGetTitle RgObjGetType RgObjMove
-syn keyword famosFunctionDe RgObjSetColor RgObjSetSize RgSetDir RgTableColumns? RgTableGetCellText
-syn keyword famosFunctionDe RgTableRows? RgTableSetCell RgTableSetColumn RgTableSetRow RgTextGet
-syn keyword famosFunctionDe RgTextSet RgTextSetData RgWindow Rosette Round
-syn keyword famosFunctionDe SDIR SDOF_Response SEQU SEQUENZ SICH
-syn keyword famosFunctionDe SICHERN STri SWIT SWITCH SamplesGate
-syn keyword famosFunctionDe SavitzkyGolay SegLang? SelBuildVarName SelChanListName? SelChanListSetName
-syn keyword famosFunctionDe SelChanListSize? SelListControl SelMeasListName? SelMeasListSetName SelMeasListSize?
-syn keyword famosFunctionDe SelUseMeasurement SetAnzeigeY SetBoxPos SetDatFormat SetEinheit
-syn keyword famosFunctionDe SetFarbe SetFlag SetKomm SetMeasurementName SetOption
-syn keyword famosFunctionDe SetSegLang SetZDel SetZOff SetZeit Setze
-syn keyword famosFunctionDe SetzeIndex Sharpness ShockResponseSpectrum Skali Sleep
-syn keyword famosFunctionDe SolveLinEq Sort SoundIndex SpeakConfig SpeakText
-syn keyword famosFunctionDe SpecThirds SpecThirds_1 Spek Spieg StGren
-syn keyword famosFunctionDe Stat Streu Stück StückIndex Sub
-syn keyword famosFunctionDe SuchePegel Summe TAdd TErsetze TForm
-syn keyword famosFunctionDe TKonv TLang TLike TTeil TVerg
-syn keyword famosFunctionDe TZeichen Tast Tast2 TerzA TerzI
-syn keyword famosFunctionDe ThrowError TransRec TransposeMatrix TsaAppend TsaAppendText
-syn keyword famosFunctionDe TsaCreateEmpty TsaDataToText TsaDecode TsaDelete TsaFilter
-syn keyword famosFunctionDe TsaFindBefore TsaFindFirst TsaFindLast TsaFindNext TsaFindTime
-syn keyword famosFunctionDe TsaFindValidPos TsaGetCount TsaGetData TsaGetText TsaGetTime
-syn keyword famosFunctionDe TsaInsert TsaInsertText TsaJoin TsaSaveAscii TsaSetData
-syn keyword famosFunctionDe TsaSetText TsaSetTime TsaTextToData TxArrayCreate TxArrayDelete
-syn keyword famosFunctionDe TxArrayGetSize TxArrayInsert TxArraySetSize TxFind TxFormatEx
-syn keyword famosFunctionDe TxGetValidVarName TxRegexMatch TxRegexReplace TxReplace TxSplit
-syn keyword famosFunctionDe TxWo TzuEW UNCE UNCERTAINTY_LOOP UncertaintyCalc
-syn keyword famosFunctionDe UncertaintyGet UncertaintyModify UncertaintySet UncertaintySnapshot UpperValue
-syn keyword famosFunctionDe UserPropCopy UserPropCount? UserPropDel UserPropInfo? UserPropName?
-syn keyword famosFunctionDe UserPropSet UserPropText? UserPropValue? VFAppendCwSnapshot VFAppendFrame
-syn keyword famosFunctionDe VFAppendPanelSnapshot VFAppendRGBData VFClose VFOpen VarExist?
-syn keyword famosFunctionDe VarGetInit VarGetInit2 VarGetName? Verify VerifyVar
-syn keyword famosFunctionDe VibrationFilter VpBackStep VpContinue VpDelLink VpGetAbsStartTime
-syn keyword famosFunctionDe VpGetAbsStartTime2 VpGetErrorText VpGetFileName VpGetImages VpGetLengthFrames
-syn keyword famosFunctionDe VpGetLengthSeconds VpGetPlayRate VpGetPosFrames VpGetPosSeconds VpGetRecordRate
-syn keyword famosFunctionDe VpGetState VpGetStateText VpGetXOffset VpLinkExists VpPause
-syn keyword famosFunctionDe VpPlay VpPlaySync VpSelect VpSetAbsStartTime VpSetAbsStartTime2
-syn keyword famosFunctionDe VpSetLink VpSetPlayRate VpSetPosFrames VpSetPosSeconds VpSetRecordRate
-syn keyword famosFunctionDe VpSetXOffset VpSingleStep VpStop VpVideoClose VpVideoLoad
-syn keyword famosFunctionDe WFTL WFTLADEN WHIL WHILE Wert
-syn keyword famosFunctionDe Wert2 WertIndex Wurz XDEL XDELTA
-syn keyword famosFunctionDe XDel XDel? XEIN XEINHEIT XOFF
-syn keyword famosFunctionDe XOFFSET XOR XOff XOff? XY
-syn keyword famosFunctionDe XYdt XYdt2 XYvon XlBuildA1Ref XlCreateTimeLine
-syn keyword famosFunctionDe XlFind XlGetSelectedRange XlGetText XlGetValue XlGetValues
-syn keyword famosFunctionDe XlGetValues2 XlPaste XlQuit XlRunMacro XlSelectRange
-syn keyword famosFunctionDe XlSetCellFormat XlSetText XlSetValue XlSetValues XlSheetActivate
-syn keyword famosFunctionDe XlSheetAdd XlSheetDelete XlSheetExist XlSheetGetActive XlSheetGetCount
-syn keyword famosFunctionDe XlSheetGetTitle XlSheetInsertCopy XlSheetMove XlSheetPrint XlSheetRename
-syn keyword famosFunctionDe XlSheetSetOption XlStart XlVisible XlWbActivate XlWbClose
-syn keyword famosFunctionDe XlWbExist XlWbGetActive XlWbGetCount XlWbGetName XlWbNew
-syn keyword famosFunctionDe XlWbOpen XlWbPrint XlWbSave YEIN YEINHEIT
-syn keyword famosFunctionDe ZDel? ZEIG ZEIGEN ZEIT ZEITKOPIE
-syn keyword famosFunctionDe ZEITSETZEN ZOff? ZeichenT Zeit? ZeitAdd
-syn keyword famosFunctionDe ZeitBinde ZeitDiff ZeitInText ZeitSystem? ZeitTeil
-syn keyword famosFunctionDe ZoomSpectrumChirpZ acos asin atan atan2
-syn keyword famosFunctionDe cos dB eRegr exp iFFT
-syn keyword famosFunctionDe idB lg ln sEff sMax
-syn keyword famosFunctionDe sMaxPos sMin sMinPos sMittel sStreu
-syn keyword famosFunctionDe signum sin tan xMaxi
+syn keyword famosFunctionDe RangeSet RedEx Regr RemoveSamples
+syn keyword famosFunctionDe Rez RgCurveSet RgDocClose RgDocCopy
+syn keyword famosFunctionDe RgDocExportEx RgDocGetPageCount
+syn keyword famosFunctionDe RgDocNew RgDocOpen RgDocPrint
+syn keyword famosFunctionDe RgDocRemovePage RgDocSave RgDocSetActive
+syn keyword famosFunctionDe RgGetErrorText RgObjDelete RgObjFind
+syn keyword famosFunctionDe RgObjGetPos RgObjGetTitle RgObjGetType
+syn keyword famosFunctionDe RgObjSetColor RgObjSetSize RgSetDir
+syn keyword famosFunctionDe RgTableGetCellText RgTableRows?
+syn keyword famosFunctionDe RgTableSetColumn RgTableSetRow RgTextGet
+syn keyword famosFunctionDe RgTextSetData RgWindow Rosette Round
+syn keyword famosFunctionDe SDOF_Response SEQUENZ SEQU SICHERN SICH STri
+syn keyword famosFunctionDe SamplesGate SavitzkyGolay SegLang?
+syn keyword famosFunctionDe SelChanListName? SelChanListSetName
+syn keyword famosFunctionDe SelListControl SelMeasListName?
+syn keyword famosFunctionDe SelMeasListSize? SelUseMeasurement
+syn keyword famosFunctionDe SetBoxPos SetDatFormat SetEinheit SetFarbe
+syn keyword famosFunctionDe SetKomm SetMeasurementName SetOption
+syn keyword famosFunctionDe SetZDel SetZOff SetZeit Setze SetzeIndex
+syn keyword famosFunctionDe ShockResponseSpectrum Skali Sleep SolveLinEq
+syn keyword famosFunctionDe SoundIndex SpeakConfig SpeakText SpecThirds
+syn keyword famosFunctionDe Spek Spieg StGren Stat Streu Stück
+syn keyword famosFunctionDe Sub SuchePegel Summe TAdd TErsetze TForm
+syn keyword famosFunctionDe TLang TLike TTeil TVerg TZeichen Tast Tast2
+syn keyword famosFunctionDe TerzI ThrowError TransRec TransposeMatrix
+syn keyword famosFunctionDe TsaAppendText TsaCreateEmpty TsaDataToText
+syn keyword famosFunctionDe TsaDelete TsaFilter TsaFindBefore
+syn keyword famosFunctionDe TsaFindLast TsaFindNext TsaFindTime
+syn keyword famosFunctionDe TsaGetCount TsaGetData TsaGetText TsaGetTime
+syn keyword famosFunctionDe TsaInsertText TsaJoin TsaSaveAscii
+syn keyword famosFunctionDe TsaSetText TsaSetTime TsaTextToData
+syn keyword famosFunctionDe TxArrayDelete TxArrayGetSize TxArrayInsert
+syn keyword famosFunctionDe TxFind TxFormatEx TxGetValidVarName
+syn keyword famosFunctionDe TxRegexReplace TxReplace TxSplit TxWo TzuEW
+syn keyword famosFunctionDe UncertaintyCalc UncertaintyGet
+syn keyword famosFunctionDe UncertaintySet UncertaintySnapshot
+syn keyword famosFunctionDe UserPropCopy UserPropCount? UserPropDel
+syn keyword famosFunctionDe UserPropName? UserPropSet UserPropText?
+syn keyword famosFunctionDe VFAppendCwSnapshot VFAppendFrame
+syn keyword famosFunctionDe VFAppendRGBData VFClose VFOpen VarExist?
+syn keyword famosFunctionDe VarGetInit2 VarGetName? Verify VerifyVar
+syn keyword famosFunctionDe VpBackStep VpContinue VpDelLink
+syn keyword famosFunctionDe VpGetAbsStartTime2 VpGetErrorText
+syn keyword famosFunctionDe VpGetImages VpGetLengthFrames
+syn keyword famosFunctionDe VpGetPlayRate VpGetPosFrames VpGetPosSeconds
+syn keyword famosFunctionDe VpGetState VpGetStateText VpGetXOffset
+syn keyword famosFunctionDe VpPause VpPlay VpPlaySync VpSelect
+syn keyword famosFunctionDe VpSetAbsStartTime2 VpSetLink VpSetPlayRate
+syn keyword famosFunctionDe VpSetPosSeconds VpSetRecordRate VpSetXOffset
+syn keyword famosFunctionDe VpStop VpVideoClose VpVideoLoad
+syn keyword famosFunctionDe WHILE WHIL Wert Wert2 WertIndex Wurz
+syn keyword famosFunctionDe XDel XDel? XEINHEIT XEIN XOFFSET XOFF
+syn keyword famosFunctionDe XOff XOff? XY XY XYdt XYdt2 XYvon
+syn keyword famosFunctionDe XlCreateTimeLine XlFind XlGetSelectedRange
+syn keyword famosFunctionDe XlGetValue XlGetValues XlGetValues2 XlPaste
+syn keyword famosFunctionDe XlRunMacro XlSelectRange XlSetCellFormat
+syn keyword famosFunctionDe XlSetValue XlSetValues XlSheetActivate
+syn keyword famosFunctionDe XlSheetDelete XlSheetExist XlSheetGetActive
+syn keyword famosFunctionDe XlSheetGetTitle XlSheetInsertCopy
+syn keyword famosFunctionDe XlSheetPrint XlSheetRename XlSheetSetOption
+syn keyword famosFunctionDe XlVisible XlWbActivate XlWbClose XlWbExist
+syn keyword famosFunctionDe XlWbGetCount XlWbGetName XlWbNew XlWbOpen
+syn keyword famosFunctionDe XlWbSave YEINHEIT YEIN ZDel? ZEIGEN ZEIG
+syn keyword famosFunctionDe ZEITSETZEN ZEIT ZOff? ZeichenT Zeit? ZeitAdd
+syn keyword famosFunctionDe ZeitDiff ZeitInText ZeitSystem? ZeitTeil
+syn keyword famosFunctionDe acos asin atan atan2 cos dB eRegr exp iFFT
+syn keyword famosFunctionDe lg ln sEff sMax sMaxPos sMin sMinPos sMittel
 " English builtin functions generated with
 " :r!python3 generate_functions_list.py imc_FAMOS_Function_Reference.pdf famosFunctionEn
-syn keyword famosFunctionEn ABCRating ACF AND APP APPLICATION
-syn keyword famosFunctionEn ASC ASCII ASCOPTION ASCSAVE Abs
-syn keyword famosFunctionEn Add All0 AmpSpectrumPeak AmpSpectrumPeak_1 AmpSpectrumPeak_exp
-syn keyword famosFunctionEn AmpSpectrumRMS AmpSpectrumRMS_1 AmpSpectrumRMS_exp Append AppendLoop
-syn keyword famosFunctionEn AppendLoopEnd Appro ApproNonLin BIN BINARY
-syn keyword famosFunctionEn BRE BREAK BitAnd BitGet BitNot
-syn keyword famosFunctionEn BitOr BitSet BitShift BoxMessage BoxOutput
-syn keyword famosFunctionEn BoxText? BoxValue? CAS CASE CCF
-syn keyword famosFunctionEn CFCFilter CLI CLIPBOARD CON CONTINUE
-syn keyword famosFunctionEn CONTROL CUR CURVESETUP CharToSv Chrct
-syn keyword famosFunctionEn Clip ClsLvlCr ClsMaxSt ClsOff2ChannelHistogram ClsOffFromRainflowGetLevelCrossing
-syn keyword famosFunctionEn ClsOffFromRainflowGetMinMaxPeak ClsOffFromRainflowGetPeak ClsOffFromRainflowGetRangePair ClsOffFromRainflowGetReconstruction ClsOffFromRainflowGetSpans
-syn keyword famosFunctionEn ClsOffFromRainflowGetZeroCrossingPeak ClsOffMarkov ClsOffMatrixSum1Triangle ClsOffMatrixSumLines ClsOffRainflowAddResidue
-syn keyword famosFunctionEn ClsOffRainflowClearMatrix ClsOffRainflowClearResidue ClsOffRainflowFeedDiscontinuity ClsOffRainflowFeedMatrix ClsOffRainflowFeedResidue
-syn keyword famosFunctionEn ClsOffRainflowFeedSamples ClsOffRainflowGetMatrix ClsOffRainflowGetResidue ClsOffRainflowGetResidueMtx ClsOffRainflowInit1
-syn keyword famosFunctionEn ClsOffRainflowInit2 ClsOffRainflowInit3 ClsOffRainflowSetMatrix ClsOffRevolutionsHistogram ClsOffRevolutionsMatrix
-syn keyword famosFunctionEn ClsOffRevolutionsMatrix2 ClsOffTM ClsOffWoehlerSN ClsPeak1 ClsPeak2
-syn keyword famosFunctionEn ClsPeak3 ClsPkSmp ClsQuantile ClsRFlow ClsRMean
-syn keyword famosFunctionEn ClsRange ClsRngPr ClsSampl ClsSmSmp ClsTAtLv
-syn keyword famosFunctionEn ClsTimeAtLevel Cmp1 Cmp2 CmpX CmpY
-syn keyword famosFunctionEn CodeRange Coherence Color? Comm? Comment
-syn keyword famosFunctionEn Compl ComplexSpectrum ComplexSpectrum_1 ComplexSpectrum_exp ConvertUnit
-syn keyword famosFunctionEn CorrCoeff CrossPowerDS CrossPowerDS_1 CrossPowerDS_exp CrossPowerNorm
-syn keyword famosFunctionEn CrossPowerNorm_1 Cut CutDt CutIndex CvAppendMarker
-syn keyword famosFunctionEn CvAskTitle CvAttrib CvConfig CvCursor CvLoadGlobalSetting
-syn keyword famosFunctionEn CvPosi CvRefDB CvReplaceChannel CvSave CvSetCursor
-syn keyword famosFunctionEn CvTitle CvUpdate CvVar CvWin CvXAxis
-syn keyword famosFunctionEn CvYAxis CwAction CwActionP CwAxisGet CwAxisGetText
-syn keyword famosFunctionEn CwAxisSet CwColorGet CwColorSet CwCosysGet CwCosysSet
-syn keyword famosFunctionEn CwDataGet CwDataGetText CwDataSet CwDeleteElement CwDisplayGet
-syn keyword famosFunctionEn CwDisplayGetText CwDisplaySet CwGlobalGet CwGlobalGetText CwGlobalSet
-syn keyword famosFunctionEn CwIsWindow CwLineGet CwLineSet CwLoadCCV CwLoadSettings
-syn keyword famosFunctionEn CwMarkerGet CwMarkerGetText CwMarkerSet CwNewChannel CwNewChannel_xy
-syn keyword famosFunctionEn CwNewChannel_xyz CwNewElement CwNewWindow CwPosition CwReplace
-syn keyword famosFunctionEn CwSaveCCV CwSelectByChannel CwSelectByIndex CwSelectMode CwSelectWindow
-syn keyword famosFunctionEn DDEInq DDESend DDESepar DDESet DEF
-syn keyword famosFunctionEn DEFAULT DEL DELETE DFTSpectrum DFilt
-syn keyword famosFunctionEn DSP DSPLOAD DataFormat? DbClosePanel DbLoadPanel
-syn keyword famosFunctionEn DbSetActivePanel DbSetPanelWindow DbShow Dialog Diff
-syn keyword famosFunctionEn DisplayY? Div DlgApplyData DlgCloseDialog DlgDeleteItem
-syn keyword famosFunctionEn DlgEnable DlgExpandTree DlgFileName DlgFindItem DlgGetBarMax
-syn keyword famosFunctionEn DlgGetBarMin DlgGetCellText DlgGetCellValue DlgGetItemCount DlgGetItemLevel
-syn keyword famosFunctionEn DlgGetItemText DlgGetPath DlgGetSelectedItem DlgGetSelectedItemCount DlgGetText
-syn keyword famosFunctionEn DlgGetValue DlgInsertItem DlgInsertTreeItem DlgIsItemSelected DlgSelectItem
-syn keyword famosFunctionEn DlgSetBackColor DlgSetBarRange DlgSetCellBackColor DlgSetCellText DlgSetCellTextColor
-syn keyword famosFunctionEn DlgSetCellValue DlgSetItemSelection DlgSetItemText DlgSetText DlgSetTextColor
-syn keyword famosFunctionEn DlgSetValue DlgShow DrTitleN ELS ELSE
-syn keyword famosFunctionEn ELSEIF EMP EMPTY END EXI
-syn keyword famosFunctionEn EXITSEQUENCE Envelope1 Envelope2 Equal EventAppend
-syn keyword famosFunctionEn EventDel EventGet EventJoin EventNew EventNum?
-syn keyword famosFunctionEn EventProp EventProp? EventSet Execute ExpoRMS
-syn keyword famosFunctionEn FAM FAMOS FAS FASLOAD FFT
-syn keyword famosFunctionEn FFTOPTION FOR FOREACH FileClose FileComm?
-syn keyword famosFunctionEn FileErrCode? FileErrText? FileLineRead FileLineWrite FileLoad
-syn keyword famosFunctionEn FileName? FileObjDel FileObjFind FileObjName? FileObjNum?
-syn keyword famosFunctionEn FileObjRead FileObjType? FileObjWrite FileOpenASCII FileOpenASCII2
-syn keyword famosFunctionEn FileOpenDSF FileOpenFAS FileOpenXLS FileOpenXLS2 FileResetAll
-syn keyword famosFunctionEn FileSave FileSetComm FileXLSCellRead FileXLSCellWrite FileXLSColumnRead
-syn keyword famosFunctionEn FileXLSSelectSheet FiltBP FiltBS FiltBpZ FiltBsZ
+syn keyword famosFunctionEn ABCRating ACF ACF AND AND APPLICATION APP
+syn keyword famosFunctionEn ASCOPTION ASC ASCSAVE ASC Abs Add All0
+syn keyword famosFunctionEn AmpSpectrumPeak_1 AmpSpectrumPeak_exp
+syn keyword famosFunctionEn AmpSpectrumRMS_1 AmpSpectrumRMS_exp Append
+syn keyword famosFunctionEn AppendLoopEnd Appro ApproNonLin BINARY BIN
+syn keyword famosFunctionEn BitAnd BitGet BitNot BitOr BitSet BitShift
+syn keyword famosFunctionEn BoxOutput BoxText? BoxValue? CASE CAS
+syn keyword famosFunctionEn CFCFilter CLIPBOARD CLI CONTINUE CON
+syn keyword famosFunctionEn CURVESETUP CUR CharToSv Chrct Clip ClsLvlCr
+syn keyword famosFunctionEn ClsOff2ChannelHistogram
+syn keyword famosFunctionEn ClsOffFromRainflowGetMinMaxPeak
+syn keyword famosFunctionEn ClsOffFromRainflowGetRangePair
+syn keyword famosFunctionEn ClsOffFromRainflowGetSpans
+syn keyword famosFunctionEn ClsOffMarkov ClsOffMatrixSum1Triangle
+syn keyword famosFunctionEn ClsOffRainflowAddResidue
+syn keyword famosFunctionEn ClsOffRainflowClearResidue
+syn keyword famosFunctionEn ClsOffRainflowFeedMatrix
+syn keyword famosFunctionEn ClsOffRainflowFeedSamples
+syn keyword famosFunctionEn ClsOffRainflowGetResidue
+syn keyword famosFunctionEn ClsOffRainflowInit1 ClsOffRainflowInit2
+syn keyword famosFunctionEn ClsOffRainflowSetMatrix
+syn keyword famosFunctionEn ClsOffRevolutionsMatrix
+syn keyword famosFunctionEn ClsOffTM ClsOffWoehlerSN ClsPeak1 ClsPeak2
+syn keyword famosFunctionEn ClsPkSmp ClsQuantile ClsRFlow ClsRMean
+syn keyword famosFunctionEn ClsRngPr ClsSampl ClsSmSmp ClsTAtLv
+syn keyword famosFunctionEn Cmp1 Cmp2 CmpX CmpY CodeRange Coherence
+syn keyword famosFunctionEn Comm? Comment Compl ComplexSpectrum
+syn keyword famosFunctionEn ComplexSpectrum_exp ConvertUnit CorrCoeff
+syn keyword famosFunctionEn CrossPowerDS_1 CrossPowerDS_exp
+syn keyword famosFunctionEn CrossPowerNorm_1 Cut CutDt CutIndex
+syn keyword famosFunctionEn CvAskTitle CvAttrib CvConfig CvCursor
+syn keyword famosFunctionEn CvPosi CvRefDB CvReplaceChannel CvSave
+syn keyword famosFunctionEn CvTitle CvUpdate CvVar CvWin CvXAxis CvYAxis
+syn keyword famosFunctionEn CwActionP CwAxisGet CwAxisGetText CwAxisSet
+syn keyword famosFunctionEn CwColorSet CwCosysGet CwCosysSet CwDataGet
+syn keyword famosFunctionEn CwDataSet CwDeleteElement CwDisplayGet
+syn keyword famosFunctionEn CwDisplaySet CwGlobalGet CwGlobalGetText
+syn keyword famosFunctionEn CwIsWindow CwLineGet CwLineSet CwLoadCCV
+syn keyword famosFunctionEn CwMarkerGet CwMarkerGetText CwMarkerSet
+syn keyword famosFunctionEn CwNewChannel_xy CwNewChannel_xyz
+syn keyword famosFunctionEn CwNewWindow CwPosition CwReplace CwSaveCCV
+syn keyword famosFunctionEn CwSelectByIndex CwSelectMode CwSelectWindow
+syn keyword famosFunctionEn DDESend DDESepar DDESet DEFAULT DEF
+syn keyword famosFunctionEn DFTSpectrum DFilt DSPLOAD DSP DataFormat?
+syn keyword famosFunctionEn DbLoadPanel DbSetActivePanel
+syn keyword famosFunctionEn DbShow Dialog Diff DisplayY? Div
+syn keyword famosFunctionEn DlgCloseDialog DlgDeleteItem DlgEnable
+syn keyword famosFunctionEn DlgFileName DlgFindItem DlgGetBarMax
+syn keyword famosFunctionEn DlgGetCellText DlgGetCellValue
+syn keyword famosFunctionEn DlgGetItemLevel DlgGetItemText DlgGetPath
+syn keyword famosFunctionEn DlgGetSelectedItemCount DlgGetText
+syn keyword famosFunctionEn DlgInsertItem DlgInsertTreeItem
+syn keyword famosFunctionEn DlgSelectItem DlgSetBackColor DlgSetBarRange
+syn keyword famosFunctionEn DlgSetCellText DlgSetCellTextColor
+syn keyword famosFunctionEn DlgSetItemSelection DlgSetItemText
+syn keyword famosFunctionEn DlgSetTextColor DlgSetValue DlgShow DrTitleN
+syn keyword famosFunctionEn ELSEIF ELS EMPTY EMP END END
+syn keyword famosFunctionEn Envelope1 Envelope2 Equal EventAppend
+syn keyword famosFunctionEn EventGet EventJoin EventNew EventNum?
+syn keyword famosFunctionEn EventProp? EventSet Execute ExpoRMS
+syn keyword famosFunctionEn FASLOAD FAS FFT FFT FFTOPTION FFT FOR FOR
+syn keyword famosFunctionEn FileClose FileComm? FileErrCode?
+syn keyword famosFunctionEn FileLineRead FileLineWrite FileLoad
+syn keyword famosFunctionEn FileObjDel FileObjFind FileObjName?
+syn keyword famosFunctionEn FileObjRead FileObjType? FileObjWrite
+syn keyword famosFunctionEn FileOpenASCII2 FileOpenDSF FileOpenFAS
+syn keyword famosFunctionEn FileOpenXLS2 FileResetAll FileSave
+syn keyword famosFunctionEn FileXLSCellRead FileXLSCellWrite
+syn keyword famosFunctionEn FileXLSSelectSheet FiltBP FiltBS FiltBpZ
 syn keyword famosFunctionEn FiltHP FiltHpZ FiltLP FiltLpZ FilterAnalog
-syn keyword famosFunctionEn Flag? Flipflop Floor FrequencyResponse FsCopyFile
-syn keyword famosFunctionEn FsCreateDirectory FsDeleteFile FsDlgSelectDirectory FsDlgSelectFiles FsFileExists
-syn keyword famosFunctionEn FsFileListClose FsFileListGetAttribute FsFileListGetCount FsFileListGetName FsFileListGetSize
-syn keyword famosFunctionEn FsFileListGetTime FsFileListNew FsGetDiskFreeSpace FsGetDriveType FsGetFileAttributes
-syn keyword famosFunctionEn FsGetFileNames FsGetFileSize FsGetFileTime FsGetLastError FsGetLastErrorNumber
-syn keyword famosFunctionEn FsGetLogicalDrives FsGetLongPathName FsGetParentDirectoryName FsGetShortPathName FsMakePath
-syn keyword famosFunctionEn FsMoveFile FsPathCombine FsRemoveDirectory FsRenameFile FsSetFileAttributes
-syn keyword famosFunctionEn FsSetFileTime FsSplitPath FsTempFileName GetLastError GetOption
-syn keyword famosFunctionEn GetScale GetSystemInfo GrChanAppend GrChanDel GrChanFind
-syn keyword famosFunctionEn GrChanName? GrChanNum? GrExpand GrJoin GrNew
-syn keyword famosFunctionEn Histo HttpGetFile HttpGetText HttpOption Hyst
-syn keyword famosFunctionEn IF IPol InDegr InRad Int
-syn keyword famosFunctionEn IntEx IntervalFrom2Levels IntervalFromLevel IntervalGetStatist IsCplx
-syn keyword famosFunctionEn IsXY Join KBT LDI LDIR
-syn keyword famosFunctionEn LFit LOA LOAD LOC LOCAL
-syn keyword famosFunctionEn Layout Leng Leng? Lip LogSetup
-syn keyword famosFunctionEn LogTrace LoudnessLevel LoudnessSpectrum LowerValue MDI
-syn keyword famosFunctionEn MDIR MInt MatrixAdd MatrixChangeDim MatrixCut
-syn keyword famosFunctionEn MatrixEigen MatrixFromLine MatrixGet MatrixInfo MatrixInit
-syn keyword famosFunctionEn MatrixInverse MatrixIpol MatrixMerge MatrixMult MatrixPart
-syn keyword famosFunctionEn MatrixSet MatrixSumLines MatrixTranspose Max Mean
-syn keyword famosFunctionEn MeasChanNames? MeasNames? MeasurementName? Median Min
-syn keyword famosFunctionEn Mirror Mod Monoflop Mult MvMax
-syn keyword famosFunctionEn MvMean MvMin MvRMS MvStDev MvSum
-syn keyword famosFunctionEn NOT NorthCorrection OR OctA OctI
-syn keyword famosFunctionEn OdsGetLastErrorCode OdsGetLastErrorTxt OdsIEAddAttribute OdsIEAddAttributeTxt OdsIEBuildVarName
-syn keyword famosFunctionEn OdsIECreateElement OdsIEDeleteElement OdsIEGetAttribute OdsIEGetAttributeTxt OdsIEGetAttributes
-syn keyword famosFunctionEn OdsIEGetChannel OdsIEGetMeasurement OdsIEGetPropertyTxt OdsIEImportData OdsIEListByAsamPath
-syn keyword famosFunctionEn OdsIEListByType OdsIEListChildren OdsIERemoveAttribute OdsIESetAttribute OdsIESetAttributeTxt
-syn keyword famosFunctionEn OdsInitialize OdsPluginListSelItems OdsPluginSessionConnect OdsSessionClose OdsSessionCreate
-syn keyword famosFunctionEn OdsSessionSelect OnError OtrEncoderRevs01 OtrFrequLine OtrOrderSpecFromFFT
-syn keyword famosFunctionEn OtrOrderSpectrum OtrResample OtrResampleAAF OtrRpmOrder OtrRpmPresentFast
-syn keyword famosFunctionEn OtrRpmPresentVector OtrRpmPresentation OtrRpmSpectrum OtrRpmSpectrumFast OtrRpmThirds
-syn keyword famosFunctionEn OtrTachoMode OtrTachoToDist OtrTachoToSpeed OtrTachoToSpeedX OtrTimeOrderSpectrum
-syn keyword famosFunctionEn OtrTrackingBandPass OtrTrackingBandPassZ OtrTrackingBandStop OtrTrackingBandStopZ OtrTrackingExpoRms
-syn keyword famosFunctionEn OtrTrackingHighPass OtrTrackingHighPassZ OtrTrackingLowPass OtrTrackingLowPassZ PAU
-syn keyword famosFunctionEn PAUSE PI PI2 Peaks Perio
-syn keyword famosFunctionEn PhaseContinuous PhaseMod PnDeleteItem PnEnable PnExportGraphics
-syn keyword famosFunctionEn PnExportPDF PnFindItem PnGetActivePage PnGetFileSelection PnGetFolder
-syn keyword famosFunctionEn PnGetItemCount PnGetItemText PnGetPageCount PnGetSelectedItem PnGetSelectedItemCount
-syn keyword famosFunctionEn PnGetText PnGetValue PnInsertItem PnInsertPage PnIsItemSelected
-syn keyword famosFunctionEn PnPrint PnRemovePage PnSave PnSelectItem PnSetActivePage
-syn keyword famosFunctionEn PnSetFileSelection PnSetFolder PnSetItemSelection PnSetItemText PnSetProperty
-syn keyword famosFunctionEn PnSetText PnSetTimer PnSetValue PnShow PnShowPage
-syn keyword famosFunctionEn PnTableColumns? PnTableGetCellText PnTableGetCellValue PnTableGetSelectedRows PnTableRows?
-syn keyword famosFunctionEn PnTableSetCell PnTableSetColumn PnTableSetProperty PnTableSetRow PnTableShowColumn
-syn keyword famosFunctionEn Pol Poly PolynomRoots Pos PosEx
+syn keyword famosFunctionEn Flipflop Floor FrequencyResponse FsCopyFile
+syn keyword famosFunctionEn FsDeleteFile FsDlgSelectDirectory
+syn keyword famosFunctionEn FsFileExists FsFileListClose
+syn keyword famosFunctionEn FsFileListGetCount FsFileListGetName
+syn keyword famosFunctionEn FsFileListGetTime FsFileListNew
+syn keyword famosFunctionEn FsGetDriveType FsGetFileAttributes
+syn keyword famosFunctionEn FsGetFileSize FsGetFileTime FsGetLastError
+syn keyword famosFunctionEn FsGetLogicalDrives FsGetLongPathName
+syn keyword famosFunctionEn FsGetShortPathName FsMakePath FsMoveFile
+syn keyword famosFunctionEn FsRemoveDirectory FsRenameFile
+syn keyword famosFunctionEn FsSetFileTime FsSplitPath FsTempFileName
+syn keyword famosFunctionEn GetOption GetScale GetSystemInfo
+syn keyword famosFunctionEn GrChanDel GrChanFind GrChanName? GrChanNum?
+syn keyword famosFunctionEn GrJoin GrNew Histo HttpGetFile HttpGetText
+syn keyword famosFunctionEn Hyst IF IF IPol InDegr InRad Int IntEx
+syn keyword famosFunctionEn IntervalFromLevel IntervalGetStatist IsCplx
+syn keyword famosFunctionEn Join KBT KBT LDIR LDI LFit LOAD LOA
+syn keyword famosFunctionEn Layout Leng Leng? Lip LogSetup LogTrace
+syn keyword famosFunctionEn LoudnessSpectrum LowerValue MDIR MDI MInt
+syn keyword famosFunctionEn MatrixChangeDim MatrixCut MatrixEigen
+syn keyword famosFunctionEn MatrixGet MatrixInfo MatrixInit
+syn keyword famosFunctionEn MatrixIpol MatrixMerge MatrixMult MatrixPart
+syn keyword famosFunctionEn MatrixSumLines MatrixTranspose Max Mean
+syn keyword famosFunctionEn MeasNames? MeasurementName? Median Min
+syn keyword famosFunctionEn Mod Monoflop Mult MvMax MvMean MvMin MvRMS
+syn keyword famosFunctionEn MvSum NOT NOT NorthCorrection OR OR OctA
+syn keyword famosFunctionEn OdsGetLastErrorCode OdsGetLastErrorTxt
+syn keyword famosFunctionEn OdsIEAddAttributeTxt OdsIEBuildVarName
+syn keyword famosFunctionEn OdsIEDeleteElement OdsIEGetAttribute
+syn keyword famosFunctionEn OdsIEGetAttributes OdsIEGetChannel
+syn keyword famosFunctionEn OdsIEGetPropertyTxt OdsIEImportData
+syn keyword famosFunctionEn OdsIEListByType OdsIEListChildren
+syn keyword famosFunctionEn OdsIESetAttribute OdsIESetAttributeTxt
+syn keyword famosFunctionEn OdsPluginListSelItems
+syn keyword famosFunctionEn OdsSessionClose OdsSessionCreate
+syn keyword famosFunctionEn OnError OtrEncoderRevs01 OtrFrequLine
+syn keyword famosFunctionEn OtrOrderSpectrum OtrResample OtrResampleAAF
+syn keyword famosFunctionEn OtrRpmPresentFast OtrRpmPresentVector
+syn keyword famosFunctionEn OtrRpmSpectrum OtrRpmSpectrumFast
+syn keyword famosFunctionEn OtrTachoMode OtrTachoToDist OtrTachoToSpeed
+syn keyword famosFunctionEn OtrTimeOrderSpectrum OtrTrackingBandPass
+syn keyword famosFunctionEn OtrTrackingBandStop OtrTrackingBandStopZ
+syn keyword famosFunctionEn OtrTrackingHighPass OtrTrackingHighPassZ
+syn keyword famosFunctionEn OtrTrackingLowPassZ PAUSE PAU PI PI PI2 PI2
+syn keyword famosFunctionEn Perio PhaseContinuous PhaseMod PnDeleteItem
+syn keyword famosFunctionEn PnExportGraphics PnExportPDF PnFindItem
+syn keyword famosFunctionEn PnGetFileSelection PnGetFolder
+syn keyword famosFunctionEn PnGetItemText PnGetPageCount
+syn keyword famosFunctionEn PnGetSelectedItemCount PnGetText PnGetValue
+syn keyword famosFunctionEn PnInsertPage PnIsItemSelected PnPrint
+syn keyword famosFunctionEn PnSave PnSelectItem PnSetActivePage
+syn keyword famosFunctionEn PnSetFolder PnSetItemSelection PnSetItemText
+syn keyword famosFunctionEn PnSetText PnSetTimer PnSetValue PnShow
+syn keyword famosFunctionEn PnTableColumns? PnTableGetCellText
+syn keyword famosFunctionEn PnTableGetSelectedRows PnTableRows?
+syn keyword famosFunctionEn PnTableSetColumn PnTableSetProperty
+syn keyword famosFunctionEn PnTableShowColumn Pol Poly PolynomRoots Pos
 syn keyword famosFunctionEn PosEx2 Power1 Power2 Power3 PowerCepstrum
-syn keyword famosFunctionEn PowerCepstrum_1 PowerCepstrum_exp PowerDS PowerDS_1 PowerDS_exp
-syn keyword famosFunctionEn PowerParameter PowerSelect PowerSpectrum PowerSpectrum_1 PowerSpectrum_exp
-syn keyword famosFunctionEn PptAddSlides PptClosePresentation PptDeleteSlide PptDuplicateSlide PptFindSlideByAlternativeText
-syn keyword famosFunctionEn PptGetSlidesCount PptMoveSlide PptOpenPresentation PptPrintPresentation PptSavePresentation
-syn keyword famosFunctionEn PptSetCellText PptSetCurve PptSetPicture PptSetText PrConfig
+syn keyword famosFunctionEn PowerCepstrum_exp PowerDS PowerDS_1
+syn keyword famosFunctionEn PowerParameter PowerSelect PowerSpectrum
+syn keyword famosFunctionEn PowerSpectrum_exp PptAddSlides
+syn keyword famosFunctionEn PptDeleteSlide PptDuplicateSlide
+syn keyword famosFunctionEn PptGetSlidesCount PptMoveSlide
+syn keyword famosFunctionEn PptPrintPresentation PptSavePresentation
+syn keyword famosFunctionEn PptSetCurve PptSetPicture PptSetText
 syn keyword famosFunctionEn PrMove PrPrint PrRdClip PrSave PrSet
-syn keyword famosFunctionEn PrTitleI PrWin PulseDuration REN RENAME
-syn keyword famosFunctionEn REQ REQUEST RGB RGBConvert RMS
-syn keyword famosFunctionEn RSamp RSamp0 RSampEx R_ChisqTest R_Execute
-syn keyword famosFunctionEn R_GetOption R_GetVar R_Norm R_SetVar R_tTest
-syn keyword famosFunctionEn Ramp Random RangeSet Recip Rect
-syn keyword famosFunctionEn Red Red2 RedEx RemoveSamples RenameMeasurement
-syn keyword famosFunctionEn Repl ReplIndex RgCurveSet RgDocClose RgDocCopy
-syn keyword famosFunctionEn RgDocExport RgDocExportEx RgDocGetPageCount RgDocInsertPage RgDocNew
-syn keyword famosFunctionEn RgDocOpen RgDocPrint RgDocPrintSetup RgDocRemovePage RgDocSave
-syn keyword famosFunctionEn RgDocSetActive RgDocSetActivePage RgGetErrorText RgObjDelete RgObjFind
-syn keyword famosFunctionEn RgObjGetCount RgObjGetPos RgObjGetTitle RgObjGetType RgObjMove
-syn keyword famosFunctionEn RgObjSetColor RgObjSetSize RgSetDir RgTableColumns? RgTableGetCellText
-syn keyword famosFunctionEn RgTableRows? RgTableSetCell RgTableSetColumn RgTableSetRow RgTextGet
-syn keyword famosFunctionEn RgTextSet RgTextSetData RgWindow Rosette Round
-syn keyword famosFunctionEn SAV SAVE SDI SDIR SDOF_Response
-syn keyword famosFunctionEn SEQ SEQUENCE SHO SHOW STri
-syn keyword famosFunctionEn SWI SWITCH SamplesGate SavitzkyGolay Scale
-syn keyword famosFunctionEn SearchLevel SegLen? SelBuildVarName SelChanListName? SelChanListSetName
-syn keyword famosFunctionEn SelChanListSize? SelListControl SelMeasListName? SelMeasListSetName SelMeasListSize?
-syn keyword famosFunctionEn SelUseMeasurement Set SetBoxPos SetColor SetComm
-syn keyword famosFunctionEn SetDataFormat SetDisplayY SetFlag SetIndex SetMeasurementName
+syn keyword famosFunctionEn PrWin PulseDuration RENAME REN REQUEST REQ
+syn keyword famosFunctionEn RGBConvert RMS RMS RSamp RSamp0 RSampEx
+syn keyword famosFunctionEn R_Execute R_GetOption R_GetVar R_Norm
+syn keyword famosFunctionEn R_tTest Ramp Random RangeSet Recip Rect Red
+syn keyword famosFunctionEn RedEx RemoveSamples RenameMeasurement Repl
+syn keyword famosFunctionEn RgCurveSet RgDocClose RgDocCopy RgDocExport
+syn keyword famosFunctionEn RgDocGetPageCount RgDocInsertPage RgDocNew
+syn keyword famosFunctionEn RgDocPrint RgDocPrintSetup RgDocRemovePage
+syn keyword famosFunctionEn RgDocSetActive RgDocSetActivePage
+syn keyword famosFunctionEn RgObjDelete RgObjFind RgObjGetCount
+syn keyword famosFunctionEn RgObjGetTitle RgObjGetType RgObjMove
+syn keyword famosFunctionEn RgObjSetSize RgSetDir RgTableColumns?
+syn keyword famosFunctionEn RgTableRows? RgTableSetCell RgTableSetColumn
+syn keyword famosFunctionEn RgTextGet RgTextSet RgTextSetData RgWindow
+syn keyword famosFunctionEn Round SAVE SAV SDIR SDI SDOF_Response
+syn keyword famosFunctionEn SHOW SHO STri SWITCH SWI SamplesGate
+syn keyword famosFunctionEn Scale SearchLevel SegLen? SelBuildVarName
+syn keyword famosFunctionEn SelChanListSetName SelChanListSize?
+syn keyword famosFunctionEn SelMeasListName? SelMeasListSetName
+syn keyword famosFunctionEn SelUseMeasurement Set SetBoxPos SetColor
+syn keyword famosFunctionEn SetDataFormat SetDisplayY SetFlag SetIndex
 syn keyword famosFunctionEn SetOption SetSegLen SetTime SetUnit SetZDel
-syn keyword famosFunctionEn SetZOff Sharpness ShockResponseSpectrum SlClip Sleep
-syn keyword famosFunctionEn Smo Smo3 Smo5 SolveLinEq Sort
-syn keyword famosFunctionEn SoundIndex SpeakConfig SpeakText Spec SpecThirds
-syn keyword famosFunctionEn SpecThirds_1 StDev Stat Sub Sum
-syn keyword famosFunctionEn SvToChar TAdd TComp TConv TForm
-syn keyword famosFunctionEn TIM TIMECOPY TIMESET TLeng TLike
-syn keyword famosFunctionEn TPart TReplace ThrowError Time? TimeAdd
-syn keyword famosFunctionEn TimeDiff TimeJoin TimeSplit TimeSystem? TimeToText
-syn keyword famosFunctionEn Top TransRec TransposeMatrix TsaAppend TsaAppendText
-syn keyword famosFunctionEn TsaCreateEmpty TsaDataToText TsaDecode TsaDelete TsaFilter
-syn keyword famosFunctionEn TsaFindBefore TsaFindFirst TsaFindLast TsaFindNext TsaFindTime
-syn keyword famosFunctionEn TsaFindValidPos TsaGetCount TsaGetData TsaGetText TsaGetTime
-syn keyword famosFunctionEn TsaInsert TsaInsertText TsaJoin TsaSaveAscii TsaSetData
-syn keyword famosFunctionEn TsaSetText TsaSetTime TsaTextToData TtoSv TxArrayCreate
-syn keyword famosFunctionEn TxArrayDelete TxArrayGetSize TxArrayInsert TxArraySetSize TxFind
-syn keyword famosFunctionEn TxFormatEx TxGetValidVarName TxRegexMatch TxRegexReplace TxReplace
-syn keyword famosFunctionEn TxSplit TxWhere UNC UNCERTAINTY_LOOP UncertaintyCalc
-syn keyword famosFunctionEn UncertaintyGet UncertaintyModify UncertaintySet UncertaintySnapshot Unit?
-syn keyword famosFunctionEn UpperValue UserPropCopy UserPropCount? UserPropDel UserPropInfo?
-syn keyword famosFunctionEn UserPropName? UserPropSet UserPropText? UserPropValue? VFAppendCwSnapshot
-syn keyword famosFunctionEn VFAppendFrame VFAppendPanelSnapshot VFAppendRGBData VFClose VFOpen
-syn keyword famosFunctionEn Value Value2 ValueIndex VarExist? VarGetInit
-syn keyword famosFunctionEn VarGetInit2 VarGetName? Verify VerifyVar VibrationFilter
-syn keyword famosFunctionEn VpBackStep VpContinue VpDelLink VpGetAbsStartTime VpGetAbsStartTime2
-syn keyword famosFunctionEn VpGetErrorText VpGetFileName VpGetImages VpGetLengthFrames VpGetLengthSeconds
-syn keyword famosFunctionEn VpGetPlayRate VpGetPosFrames VpGetPosSeconds VpGetRecordRate VpGetState
-syn keyword famosFunctionEn VpGetStateText VpGetXOffset VpLinkExists VpPause VpPlay
-syn keyword famosFunctionEn VpPlaySync VpSelect VpSetAbsStartTime VpSetAbsStartTime2 VpSetLink
-syn keyword famosFunctionEn VpSetPlayRate VpSetPosFrames VpSetPosSeconds VpSetRecordRate VpSetXOffset
-syn keyword famosFunctionEn VpSingleStep VpStop VpVideoClose VpVideoLoad WFT
-syn keyword famosFunctionEn WFTLOAD WHI WHILE XDE XDELTA
-syn keyword famosFunctionEn XDel XDel? XOF XOFFSET XOR
-syn keyword famosFunctionEn XOff XOff? XUN XUNIT XY
-syn keyword famosFunctionEn XYdt XYdt2 XYof XlBuildA1Ref XlCreateTimeLine
-syn keyword famosFunctionEn XlFind XlGetSelectedRange XlGetText XlGetValue XlGetValues
-syn keyword famosFunctionEn XlGetValues2 XlPaste XlQuit XlRunMacro XlSelectRange
-syn keyword famosFunctionEn XlSetCellFormat XlSetText XlSetValue XlSetValues XlSheetActivate
-syn keyword famosFunctionEn XlSheetAdd XlSheetDelete XlSheetExist XlSheetGetActive XlSheetGetCount
-syn keyword famosFunctionEn XlSheetGetTitle XlSheetInsertCopy XlSheetMove XlSheetPrint XlSheetRename
-syn keyword famosFunctionEn XlSheetSetOption XlStart XlVisible XlWbActivate XlWbClose
-syn keyword famosFunctionEn XlWbExist XlWbGetActive XlWbGetCount XlWbGetName XlWbNew
-syn keyword famosFunctionEn XlWbOpen XlWbPrint XlWbSave YUN YUNIT
-syn keyword famosFunctionEn ZDel? ZOff? ZoomSpectrumChirpZ acos asin
-syn keyword famosFunctionEn atan atan2 cos dB eFit
-syn keyword famosFunctionEn exp iFFT idB ln log
-syn keyword famosFunctionEn sMax sMaxPos sMean sMin sMinPos
-syn keyword famosFunctionEn sRMS sStDev signum sin sqr
-syn keyword famosFunctionEn sqrt tan xMax
+syn keyword famosFunctionEn Sharpness ShockResponseSpectrum SlClip Sleep
+syn keyword famosFunctionEn Smo3 Smo5 SolveLinEq Sort SoundIndex
+syn keyword famosFunctionEn SpeakText Spec SpecThirds SpecThirds_1 StDev
+syn keyword famosFunctionEn Sub Sum SvToChar TAdd TComp TConv TForm
+syn keyword famosFunctionEn TIMESET TIM TLeng TLike TPart TReplace
+syn keyword famosFunctionEn Time? TimeAdd TimeDiff TimeJoin TimeSplit
+syn keyword famosFunctionEn TimeToText Top TransRec TransposeMatrix
+syn keyword famosFunctionEn TsaAppendText TsaCreateEmpty TsaDataToText
+syn keyword famosFunctionEn TsaDelete TsaFilter TsaFindBefore
+syn keyword famosFunctionEn TsaFindLast TsaFindNext TsaFindTime
+syn keyword famosFunctionEn TsaGetCount TsaGetData TsaGetText TsaGetTime
+syn keyword famosFunctionEn TsaInsertText TsaJoin TsaSaveAscii
+syn keyword famosFunctionEn TsaSetText TsaSetTime TsaTextToData TtoSv
+syn keyword famosFunctionEn TxArrayDelete TxArrayGetSize TxArrayInsert
+syn keyword famosFunctionEn TxFind TxFormatEx TxGetValidVarName
+syn keyword famosFunctionEn TxRegexReplace TxReplace TxSplit TxWhere
+syn keyword famosFunctionEn UncertaintyCalc UncertaintyGet
+syn keyword famosFunctionEn UncertaintySet UncertaintySnapshot Unit?
+syn keyword famosFunctionEn UserPropCopy UserPropCount? UserPropDel
+syn keyword famosFunctionEn UserPropName? UserPropSet UserPropText?
+syn keyword famosFunctionEn VFAppendCwSnapshot VFAppendFrame
+syn keyword famosFunctionEn VFAppendRGBData VFClose VFOpen Value Value2
+syn keyword famosFunctionEn VarExist? VarGetInit VarGetInit2 VarGetName?
+syn keyword famosFunctionEn VerifyVar VibrationFilter VpBackStep
+syn keyword famosFunctionEn VpDelLink VpGetAbsStartTime
+syn keyword famosFunctionEn VpGetErrorText VpGetFileName VpGetImages
+syn keyword famosFunctionEn VpGetLengthSeconds VpGetPlayRate
+syn keyword famosFunctionEn VpGetPosSeconds VpGetRecordRate VpGetState
+syn keyword famosFunctionEn VpGetXOffset VpLinkExists VpPause VpPlay
+syn keyword famosFunctionEn VpSelect VpSetAbsStartTime
+syn keyword famosFunctionEn VpSetLink VpSetPlayRate VpSetPosFrames
+syn keyword famosFunctionEn VpSetRecordRate VpSetXOffset VpSingleStep
+syn keyword famosFunctionEn VpVideoClose VpVideoLoad WFTLOAD WFT
+syn keyword famosFunctionEn XDELTA XDE XDel XDel? XOFFSET XOF XOR XOR
+syn keyword famosFunctionEn XOff? XUNIT XUN XY XY XYdt XYdt2 XYof
+syn keyword famosFunctionEn XlCreateTimeLine XlFind XlGetSelectedRange
+syn keyword famosFunctionEn XlGetValue XlGetValues XlGetValues2 XlPaste
+syn keyword famosFunctionEn XlRunMacro XlSelectRange XlSetCellFormat
+syn keyword famosFunctionEn XlSetValue XlSetValues XlSheetActivate
+syn keyword famosFunctionEn XlSheetDelete XlSheetExist XlSheetGetActive
+syn keyword famosFunctionEn XlSheetGetTitle XlSheetInsertCopy
+syn keyword famosFunctionEn XlSheetPrint XlSheetRename XlSheetSetOption
+syn keyword famosFunctionEn XlVisible XlWbActivate XlWbClose XlWbExist
+syn keyword famosFunctionEn XlWbGetCount XlWbGetName XlWbNew XlWbOpen
+syn keyword famosFunctionEn XlWbSave YUNIT YUN ZDel? ZOff?
+syn keyword famosFunctionEn acos asin atan atan2 cos dB eFit exp iFFT
+syn keyword famosFunctionEn ln log sMax sMaxPos sMean sMin sMinPos sRMS
+
 syn keyword famosTodo contained	TODO FIXME XXX DEBUG NOTE
 
-syn region famosComment        start=";" end="$" contains=famosTodo
-syn region famosComment        start="(\*" end="\*)" contains=famosTodo
+syn match   famosComment    /;.*$/
+syn match   famosComment    /comm.*$/i
+syn region  famosComment        start=";" end="$" contains=famosTodo
+syn region  famosComment        start="(\*" end="\*)" contains=famosTodo
 
 syn match   famosSymbolOperator      "-"
 syn match   famosSymbolOperator      ">"

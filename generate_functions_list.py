@@ -25,22 +25,6 @@ def extract_functions(fname):
     reader = pypdf.PdfReader(open(fname, 'rb'))
     famosfunc = [o['/Title'] for o in reader.outline[1:-1]
             if isfamosfunction(o['/Title'])]
-    """
-    older famos functions in CAPITAL can be shorten
-    German function name can be shorten to 4 characters
-    English function name can be shorten to 3 characters
-    """
-    short_famosfunc = []
-    if 'ENTFERNEN' in famosfunc:
-        for func in famosfunc:
-            if func.isupper():
-                short_famosfunc.append(func[:4])
-    else:
-        for func in famosfunc:
-            if func.isupper():
-                short_famosfunc.append(func[:3])
-    famosfunc.extend(short_famosfunc)
-    famosfunc = list(set(famosfunc))
     famosfunc.sort()
     return famosfunc
 
@@ -50,13 +34,27 @@ def print_syntax(ref_fname, group):
     extract the function list and write the result to a vim syntax file
     with the prefix syn keyword ...
     """
+    maxlen = 73
     functions = extract_functions(ref_fname)
-    numfun = len(functions)
-    for i in range(0, numfun, 5):
-        start = i
-        end = min(i+5, numfun)
-        fun_list = ' '.join(functions[start:end])
-        print(f'syn keyword {group} {fun_list}')
+    # older famos functions in CAPITAL can be shorten
+    # German function name can be shorten to 4 characters
+    # English function name can be shorten to 3 characters
+    if 'ENTFERNEN' in functions:
+        lang='de'
+    else:
+        lang='en'
+    line = f'syn keyword {group}'
+    for func in functions:
+        if func.isupper():
+            if lang == 'de':
+                func = f'{func} {func[:4]}'
+            else:
+                func = f'{func} {func[:3]}'
+        if len(f'{line} {func}') < maxlen:
+            line = f'{line} {func}'
+        else:
+            print(line)
+            line = f'syn keyword {group}'
 
 
 if __name__ == '__main__':
