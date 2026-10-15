@@ -25,6 +25,8 @@ def extract_functions(fname):
     reader = pypdf.PdfReader(open(fname, 'rb'))
     famosfunc = [o['/Title'] for o in reader.outline[1:-1]
             if isfamosfunction(o['/Title'])]
+    # skip kommentar and comment which are special words
+    famosfunc = [f for f in famosfunc if f.lower() != 'comment' or f.lower() != 'kommentar']
     famosfunc.sort()
     return famosfunc
 
@@ -46,10 +48,10 @@ def print_syntax(ref_fname, group):
     line = f'syn keyword {group}'
     for func in functions:
         if func.isupper():
-            if lang == 'de':
-                func = f'{func} {func[:4]}'
-            else:
-                func = f'{func} {func[:3]}'
+            if lang == 'de' and len(func) > 4:
+                func = f'{func[:4]}[{func[4:]}]'
+            elif len(func) > 3:
+                func = f'{func[:3]}[{func[3:]}]'
         if len(f'{line} {func}') < maxlen:
             line = f'{line} {func}'
         else:
