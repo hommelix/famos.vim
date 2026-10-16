@@ -254,7 +254,7 @@ syn keyword famosFunctionEn ClsOffTM ClsOffWoehlerSN ClsPeak1 ClsPeak2
 syn keyword famosFunctionEn ClsPkSmp ClsQuantile ClsRFlow ClsRMean
 syn keyword famosFunctionEn ClsRngPr ClsSampl ClsSmSmp ClsTAtLv
 syn keyword famosFunctionEn Cmp1 Cmp2 CmpX CmpY CodeRange Coherence
-syn keyword famosFunctionEn Comm? Comment Compl ComplexSpectrum
+syn keyword famosFunctionEn Comm? Compl ComplexSpectrum
 syn keyword famosFunctionEn ComplexSpectrum_exp ConvertUnit CorrCoeff
 syn keyword famosFunctionEn CrossPowerDS_1 CrossPowerDS_exp
 syn keyword famosFunctionEn CrossPowerNorm_1 Cut CutDt CutIndex
@@ -433,10 +433,12 @@ syn keyword famosFunctionEn ln log sMax sMaxPos sMean sMin sMinPos sRMS
 
 syn keyword famosTodo contained	TODO FIXME XXX DEBUG NOTE
 
-syn match   famosComment    /;.*$/
-syn match   famosComment    /comm.*$/
-syn region  famosComment        start=";" end="$" contains=famosTodo
-syn region  famosComment        start="(\*" end="\*)" contains=famosTodo
+syn match   famosComment    /;.*$/ contains=famosTodo containedin=ALL
+syn match   famosComment    /comm.*$/ contains=famosTodo containedin=ALL
+syn match   famosComment    /comment.*$/ contains=famosTodo containedin=ALL
+syn match   famosComment    /komm.*$/ contains=famosTodo containedin=ALL
+syn match   famosComment    /kommentar.*$/ contains=famosTodo containedin=ALL
+syn region  famosComment    start="(\*" end="\*)" contains=famosTodo containedin=ALL
 
 syn match   famosSymbolOperator      "-"
 syn match   famosSymbolOperator      ">"

@@ -26,7 +26,7 @@ def extract_functions(fname):
     famosfunc = [o['/Title'] for o in reader.outline[1:-1]
             if isfamosfunction(o['/Title'])]
     # skip kommentar and comment which are special words
-    famosfunc = [f for f in famosfunc if f.lower() != 'comment' or f.lower() != 'kommentar']
+    famosfunc = [f for f in famosfunc if (f.lower() != 'comment' and f.lower() != 'kommentar')]
     famosfunc.sort()
     return famosfunc
 
